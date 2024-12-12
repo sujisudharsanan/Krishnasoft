@@ -27,7 +27,7 @@ a:hover {
 }
 
 .navbar .logo {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* Slightly smaller font size */
   font-weight: bold;
 }
 
@@ -44,24 +44,24 @@ a:hover {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem; /* Adjusted padding */
   background: linear-gradient(135deg, #37475a, #232f3e);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Slightly smaller font size */
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Slightly smaller font size */
   margin-bottom: 2rem;
 }
 
 .btn-primary {
   display: inline-block;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.8rem; /* Adjusted padding */
+  font-size: 0.95rem; /* Slightly smaller font size */
   background-color: #febd69;
   color: #232f3e;
   border: none;
@@ -81,13 +81,13 @@ a:hover {
 }
 
 .services h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem; /* Slightly smaller font size */
+  margin-bottom: 1.5rem;
 }
 
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Adjusted for better spacing */
   gap: 1.5rem;
 }
 
@@ -106,18 +106,18 @@ a:hover {
 }
 
 .card i {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Slightly smaller icon size */
   margin-bottom: 1rem;
   color: #febd69;
 }
 
 .card h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Slightly smaller font size */
   margin-bottom: 0.5rem;
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Slightly smaller font size */
 }
 
 /* Clients Section */
@@ -128,13 +128,13 @@ a:hover {
 }
 
 .clients h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem; /* Slightly smaller font size */
+  margin-bottom: 1.5rem;
 }
 
 .client-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Adjusted for better spacing */
   gap: 1.5rem;
 }
 
@@ -153,12 +153,12 @@ a:hover {
 }
 
 .client-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Slightly smaller font size */
   margin-bottom: 0.5rem;
 }
 
 .client-card p {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Slightly smaller font size */
 }
 
 /* Footer Section */
@@ -169,7 +169,7 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Slightly smaller font size */
   margin: 0;
   color: #ffffff;
 }
@@ -185,9 +185,13 @@ footer p {
   .nav-links {
     display: flex;
     justify-content: space-between; /* Horizontally aligned */
-    gap: 1.5rem;
-    padding: 0;
+    gap: 1rem; /* Space between menu items */
     margin-top: 1rem; /* Add space between logo and nav links */
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-left: 0; /* Remove left margin for list items */
   }
 
   .hero {
@@ -195,11 +199,11 @@ footer p {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Slightly smaller font size */
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly smaller font size */
   }
 
   .btn-primary {
@@ -209,7 +213,7 @@ footer p {
 
   /* Service and Client section titles */
   .services h2, .clients h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Slightly smaller font size */
   }
 
   /* Service and Client cards displayed horizontally */
@@ -221,13 +225,13 @@ footer p {
   }
 
   .card, .client-card {
-    min-width: 250px;
+    min-width: 230px; /* Adjusted width */
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly smaller font size */
   }
 
   .card i, .client-card i {
-    font-size: 1.8rem;
+    font-size: 1.7rem; /* Slightly smaller icon size */
   }
 
   footer p {
