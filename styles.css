@@ -187,9 +187,10 @@ footer p {
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row; /* Display nav items horizontally */
     gap: 1rem;
     padding: 0;
+    margin-top: 1rem; /* Spacing between logo and nav links */
   }
 
   .hero {
@@ -214,12 +215,16 @@ footer p {
     font-size: 2rem;
   }
 
-  /* Service and Client cards adjustments */
+  /* Service and Client cards displayed horizontally */
   .service-cards, .client-list {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto; /* Allow scrolling horizontally */
+    gap: 1rem;
+    padding: 0.5rem;
   }
 
   .card, .client-card {
+    min-width: 250px;
     padding: 1rem;
     font-size: 1rem;
   }
