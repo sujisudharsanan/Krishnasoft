@@ -1,0 +1,210 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #232f3e; /* Amazon's dark blue */
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #febd69; /* Amazon yellow for hover effect */
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #232f3e; /* Amazon's dark blue */
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(135deg, #37475a, #232f3e); /* Amazon's gradient */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: #febd69; /* Amazon yellow */
+    color: #232f3e; /* Dark blue */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffa41c; /* Brighter Amazon yellow */
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 3rem 1rem;
+    background-color: #232f3e; /* Amazon's dark blue */
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #37475a; /* Slightly lighter Amazon blue */
+    padding: 1.5rem;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #febd69; /* Amazon yellow icons */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  /* Clients Section */
+  .clients {
+    padding: 3rem 1rem;
+    background-color: #232f3e; /* Amazon's dark blue background */
+    text-align: center;
+  }
+  
+  .clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .client-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .client-card {
+    background-color: #37475a; /* Slightly lighter Amazon blue */
+    padding: 1rem;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .client-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .client-card p {
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #37475a; /* Slightly lighter Amazon blue */
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffffff; /* White text */
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .btn-primary {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .service-cards,
+    .client-list {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
