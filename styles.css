@@ -23,10 +23,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #232f3e; /* Amazon's dark blue */
+  background-color: #232f3e;
 }
 
-.logo {
+.navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -44,7 +44,7 @@ a:hover {
 .hero {
   text-align: center;
   padding: 5rem 1rem;
-  background: linear-gradient(135deg, #37475a, #232f3e); /* Amazon's gradient */
+  background: linear-gradient(135deg, #37475a, #232f3e);
 }
 
 .hero h1 {
@@ -61,21 +61,21 @@ a:hover {
   display: inline-block;
   padding: 0.8rem 2rem;
   font-size: 1rem;
-  background-color: #febd69; /* Amazon yellow */
-  color: #232f3e; /* Dark blue */
+  background-color: #febd69;
+  color: #232f3e;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: #ffa41c; /* Brighter Amazon yellow */
+  background-color: #ffa41c;
 }
 
 /* Services Section */
 .services {
   padding: 3rem 1rem;
-  background-color: #232f3e; /* Amazon's dark blue */
+  background-color: #232f3e;
   text-align: center;
 }
 
@@ -91,9 +91,9 @@ a:hover {
 }
 
 .card {
-  background-color: #37475a; /* Slightly lighter Amazon blue */
+  background-color: #37475a;
   padding: 1.5rem;
-  border: 1px solid #ffffff; /* White border */
+  border: 1px solid #ffffff;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -107,7 +107,7 @@ a:hover {
 .card i {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #febd69; /* Amazon yellow icons */
+  color: #febd69;
 }
 
 .card h3 {
@@ -122,7 +122,7 @@ a:hover {
 /* Clients Section */
 .clients {
   padding: 3rem 1rem;
-  background-color: #232f3e; /* Amazon's dark blue background */
+  background-color: #232f3e;
   text-align: center;
 }
 
@@ -138,9 +138,9 @@ a:hover {
 }
 
 .client-card {
-  background-color: #37475a; /* Slightly lighter Amazon blue */
+  background-color: #37475a;
   padding: 1rem;
-  border: 1px solid #ffffff; /* White border */
+  border: 1px solid #ffffff;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -164,25 +164,36 @@ a:hover {
 footer {
   text-align: center;
   padding: 1.5rem 0;
-  background-color: #37475a; /* Slightly lighter Amazon blue */
+  background-color: #37475a;
 }
 
 footer p {
   font-size: 1rem;
   margin: 0;
-  color: #ffffff; /* White text */
+  color: #ffffff;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  /* Body font-size adjustment */
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar for mobile */
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    padding: 1rem;
   }
 
   .nav-links {
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
   }
 
   .hero h1 {
@@ -198,21 +209,23 @@ footer p {
     font-size: 0.9rem;
   }
 
+  /* Service and Client section titles */
   .services h2, .clients h2 {
     font-size: 2rem;
   }
 
-  .card h3, .client-card h3 {
-    font-size: 1.2rem;
+  /* Service and Client cards adjustments */
+  .service-cards, .client-list {
+    grid-template-columns: 1fr;
   }
 
-  .card p, .client-card p {
-    font-size: 0.9rem;
+  .card, .client-card {
+    padding: 1rem;
+    font-size: 1rem;
   }
 
-  .service-cards,
-  .client-list {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
+  .card i, .client-card i {
+    font-size: 1.8rem;
   }
 
   footer p {
