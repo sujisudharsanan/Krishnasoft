@@ -34,6 +34,7 @@ a:hover {
 .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .nav-links li {
@@ -160,7 +161,7 @@ a:hover {
   font-size: 1rem;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -175,22 +176,18 @@ footer p {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  /* Body font-size adjustment */
-  body {
-    font-size: 14px;
-  }
-
-  /* Navbar for mobile */
+  /* Navbar for mobile - Display menu items horizontally */
   .navbar {
     flex-direction: column;
     padding: 1rem;
   }
 
   .nav-links {
-    flex-direction: row; /* Display nav items horizontally */
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between; /* Horizontally aligned */
+    gap: 1.5rem;
     padding: 0;
-    margin-top: 1rem; /* Spacing between logo and nav links */
+    margin-top: 1rem; /* Add space between logo and nav links */
   }
 
   .hero {
